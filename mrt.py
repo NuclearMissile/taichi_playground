@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import taichi as ti
 
-ti.init(arch=ti.gpu)
+ti.init(arch=ti.opengl)
 
 
 @ti.data_oriented
@@ -251,7 +251,7 @@ class lbm_solver:
 
 
 if __name__ == '__main__':
-    flow_case = 1
+    flow_case = 0
     if (flow_case == 0):  # von Karman vortex street: Re = U*D/niu = 200
         lbm = lbm_solver(401, 101, 0.0001, [0, 0, 1, 0],
                          [[0.05, 0.0], [0.0, 0.0], [0.0, 0.0], [0.0, 0.0]],

@@ -4,7 +4,7 @@ import random
 import numpy as np
 import taichi as ti
 
-ti.init(arch=ti.gpu)
+ti.init(arch=ti.opengl)
 
 nx = 800
 ny = 400
