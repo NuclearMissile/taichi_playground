@@ -3,7 +3,7 @@ import taichi as ti
 
 # Shadertoy: Seascape, reference => https://www.shadertoy.com/view/Ms2SD1
 
-ti.init(debug=False, arch=ti.opengl)
+ti.init(debug=False, arch=ti.cuda)
 
 WIDTH, HEIGHT = 640, 320
 NUM_STEPS = 8

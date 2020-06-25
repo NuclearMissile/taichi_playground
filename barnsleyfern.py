@@ -11,8 +11,7 @@ pixels = ti.Vector(3, dt=ti.f32, shape=(width, height))
 @ti.func
 def generatePoint(x, y, t):
     r = ti.random()
-    nextX = 0.0
-    nextY = 0.0
+    nextX, nextY = 0.0, 0.0
 
     if r < 0.01:
         nextX = 0
